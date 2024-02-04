@@ -1,0 +1,90 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body {
+    font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.search-field {
+    margin: 1rem;
+    border-radius: 1.5rem;
+    border: 1px solid dimgray;
+    padding: 0.5rem 1rem;
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 0.3rem;
+}
+
+.search-input {
+    padding: 1rem;
+    font-size: 1rem;
+    border: none;
+}
+
+.search-input :focus,
+:focus-visible {
+    outline: none;
+}
+
+.search-suggestions {
+    border: 1px solid lightgray;
+    margin-left: 1rem;
+    list-style: none;
+    max-height: 60vh;
+    overflow-y: auto;
+}
+
+.user-row {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 5px;
+    height: 3rem;
+    border-bottom: 1px solid lightgrey;
+}
+.pill-container {
+    display: flex;
+    align-items: center;
+    gap: 3px;
+    height: 2rem;
+    width: fit-content;
+    background-color: black;
+    color: white;
+    border-radius: 1rem;
+    padding: 0.5rem;
+}
+.pill-container:hover {
+    cursor: pointer;
+    background-color: rgb(41, 41, 41);
+}
+.pill-container span {
+    height: 2rem;
+    display: flex;
+    align-items: center;
+}
+.pill-container img {
+    height: 100%;
+    padding: 0.5rem;
+}
+.user-row:last-child {
+    border: 0;
+}
+.user-row:hover {
+    cursor: pointer;
+    background-color: lightgray;
+}
+.user-row.active {
+    cursor: pointer;
+    background-color: lightgray;
+}
+.user-row span:first-child {
+    height: 3rem;
+}
+
+.user-row img {
+    height: 100%;
+    padding: 0.5rem;
+}
